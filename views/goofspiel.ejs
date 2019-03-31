@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+  </head>
+
+  <body class="body">
+        <h1>Let's Play GOOFSPIEL</h1>
+        <div class="roundNum"> Round Number: 1</div>
+        <div id="player-score" class='score-board'>YOUR SCORE: 0</div>
+        <div id="comp-score" class='score-board'>OPPONENT'S SCORE: 0</div>
+
+
+        <div class="prize">
+          <% let hearts = [] %>
+            <% for (let i = 0; i < data.length; i ++) { %>
+              <% if (data[i].suit === 'hearts') { %>
+                <% hearts.push(data[i]) }}%>
+          <% let random = Math.floor(Math.random() * hearts.length)  %>
+                <div>
+                  <img id="<%=hearts[0].value%>" src="images/<%=hearts[0].value + hearts[0].suit%>.jpg" height=100 width=70 />
+                </div>
+
+
+
+        </div>
+          <div><button id='new-game' type="submit" class="btn btn-primary" value="Button">New Game</button> </div>
+          <div class='bid-card'></div>
+          <button id='lock-bid' type="submit" class="btn btn-danger" value="Button">Lock Bid</button> 
+          <div class="textInfo">Please select your card...</div>
+
+        <div id="1"></div>
+        <container class='cards'>
+
+
+          <% data.forEach(function(element){ %>
+            <% if (element.suit === 'spades') { %>
+                <div>
+                  <img class='bidding' id='<%=element.value%>'src="images/<%=element.value + element.suit%>.jpg" height=100 width=70 />
+                </div>
+            <% }}) %>
+
+        </container>
+  </body>
+
+</html>

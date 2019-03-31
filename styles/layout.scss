@@ -1,0 +1,97 @@
+.body {
+  background-color: #D3E298;
+  height: 800px;
+}
+
+body h1 {
+  color:black;
+  text-align: center;
+}
+
+container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 99%;
+  height: 100px;
+}
+
+.score-board {
+  border: 3px solid black;
+  color: white;
+  height: 60px;
+  width: 120px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom:50px;
+  background-color: darkblue;
+  border-radius: 10px;
+}
+
+div.prize {
+  margin: 0 auto;
+  display: block;
+  padding: 0px 0px 15px 0px;
+  width: 70px;
+}
+
+body h3 {
+  text-align: center;
+}
+
+img:hover {
+  border: 2px, solid, red;
+  cursor: pointer;
+}
+
+div.bid-card {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.cards img:hover {
+  border-style: solid;
+}
+
+.user_login {
+  width: 400px;
+  height: 70px;
+  margin: auto;
+  padding-left: 30px;
+}
+
+.login_head {
+  padding: 100px;
+}
+
+.highlight {
+  border-style: solid
+}
+
+.roundNum {
+  font-size: 20px;
+  border-style: solid;
+  background-color: white;
+  display: inline;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  margin: 20px;
+  width: 105.27px;
+}
+
+.btn-primary {
+  margin: 20px;
+}
+
+.textInfo {
+  display: inline;
+  font-weight: 700;
+  margin-left: 100px;
+}
