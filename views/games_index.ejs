@@ -4,21 +4,61 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Index</title>
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/games.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 </head>
 <body class="body">
     <h1>Last Minute Games</h1>
     <h3>Choose a game to get started</h3>
-    <form method="POST" action="/games/1">
-      <button type="submit">CREATE GAME</button>
-    </form>
-    <form method="GET" action="/games/1">
-      <button type="submit">JOIN LOBBY</button>
-    </form>
-    <div><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Royal_flush.jpg/1200px-Royal_flush.jpg" alt="goofspiel" height=200 width="300"></div>
-
+    <article>
+      <h4 class="game-title"> Goofspiel!</h4>
+      <div class="game">
+        <form method="POST" action="/games/1">
+          <button type="submit" class="btn btn-primary" >Create Game</button>
+        </form>
+        <form method="GET" action="/games/1">
+          <button type="submit" class="btn btn-success">Join Lobby</button>
+        </form>
+      </div>
+      <div><img src="https://farm6.staticflickr.com/5591/14931185560_c79dd3d562_c.jpg" alt="goofspiel" height=200 width="300"></div>
+    </article>
+    <article>
+      <h4 class="game-title"> Blackjack!</h4>
+      <div class="game">
+        <form method="POST" action="/games/1">
+          <button type="submit" class="btn btn-primary" >Create Game</button>
+        </form>
+        <form method="GET" action="/games/1">
+          <button type="submit" class="btn btn-success">Join Lobby</button>
+        </form>
+      </div>
+      <div><img src="https://r.hswstatic.com/w_907/gif/how-to-play-blackjack-lead.jpg" alt="blackjack" height=200 width="300"></div>
+    </article>
+    <article>
+        <h4 class="game-title"> Texas Hold'em!</h4>
+        <div class="game">
+          <form method="POST" action="/games/1">
+            <button type="submit" class="btn btn-primary" >Create Game</button>
+          </form>
+          <form method="GET" action="/games/1">
+            <button type="submit" class="btn btn-success">Join Lobby</button>
+          </form>
+        </div>
+        <div><img src="https://www.skmurphy.com/wp-content/uploads/2016/05/TexasHoldEmRiver.png" alt="poker" height=200 width="300"></div>
+      </article>
+      <article>
+      <h4 class="game-title"> Uno!</h4>
+      <div class="game">
+        <form method="POST" action="/games/1">
+          <button type="submit" class="btn btn-primary" >Create Game</button>
+        </form>
+        <form method="GET" action="/games/1">
+          <button type="submit" class="btn btn-success">Join Lobby</button>
+        </form>
+      </div>
+      <div><img src="https://i2.wp.com/9to5toys.com/wp-content/uploads/sites/5/2017/03/uno.png" alt="uno" height=200 width="300"></div>
+    </article>
+    
 </body>
 </html>

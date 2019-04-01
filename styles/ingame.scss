@@ -1,5 +1,5 @@
 .body {
-  background-image: url('https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,h_900,q_75,w_1600/v1/clients/lasvegas/uncorkd_header_168d9326-d5e4-47eb-bc15-fe4a7eb22440.jpg');
+  background-image: url('https://i.imgur.com/ljd6LAK.jpg');
   height: 100%;
 }
 
@@ -15,7 +15,6 @@ body h1 {
 }
 
 container {
-  margin-top: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -64,6 +63,7 @@ div.bid-card {
 
 .cards img:hover {
   border-style: solid;
+  border-color: red;
 }
 
 .user_login {
@@ -78,7 +78,8 @@ div.bid-card {
 }
 
 .highlight {
-  border-style: solid
+  border-style: solid;
+  border-color: red;
 }
 
 .roundNum {
