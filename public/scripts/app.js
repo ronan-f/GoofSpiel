@@ -62,6 +62,7 @@ $(document).ready(function () {
 
   // When player clicks the card they want to play, it disappears from the DOM.
   $('.bidding').click(function () {
+      $('.bidding').removeClass('highlight');
       $(this).addClass("highlight");
       let Id = $(this).attr('id');
       bidCardId = parseInt(Id, 10);
