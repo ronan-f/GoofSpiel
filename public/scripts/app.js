@@ -7,7 +7,7 @@
   let ourBid;
   let playerScore = 0;
   let compFinal = 0;
-  let cardIndex = [0, 9, 12, 4, 1, 10, 7, 6, 5, 2, 3, 8];
+  let cardIndex = [0, 9, 12, 4, 1, 10, 7, 6, 5, 2, 3, 8, 11];
   let index = 1;
 
 $(document).ready(function () {
@@ -15,19 +15,22 @@ $(document).ready(function () {
     let cardId = $('.prize').find('img').attr('id');
     let numberScore = parseInt(cardId, 10)
     roundNumber ++;
-    if(roundNumber > 13 && playerScore > compFinal){
+    if(roundNumber > 13 && score > compScore){
       $('.roundNum').text('GAME OVER');
       $('#player-score').text('YOU WIN');
+      $('.bid-card').css('display', 'none');
+
       alert('GAME OVER. You win. Press new game to start again.')
-    } else if(roundNumber > 13 && compFinal > playerScore){
+    } else if(roundNumber > 13 && compScore > score){
       $('#comp-score').text('WINNER');
       $('.roundNum').text('GAME OVER');
+      $('.bid-card').css('display', 'none');
       alert('GAME OVER. You lose. Press new game to start over.')
     } else if(ourBid === numberScore){
       alert('Its a TIE!!');
       $('.bid-card').css('display', 'none');
       $("#" + cardId).attr('src',cardsArr[cardIndex[index]]);
-      $("#" + cardId).attr('id', cardIndex[index] + 1);
+      $("#" + cardId).attr('id', '0' + (cardIndex[index] + 1));
       index ++;
       $('#' + bidCardId).css('display', 'none');
       $('.roundNum').text('Round Number: ' + roundNumber);
@@ -37,7 +40,7 @@ $(document).ready(function () {
       score += numberScore;
       $('.bid-card').css('display', 'none');
       $("#" + cardId).attr('src',cardsArr[cardIndex[index]]);
-      $("#" + cardId).attr('id', cardIndex[index] + 1);
+      $("#" + cardId).attr('id', '0' + (cardIndex[index] + 1));
       index ++;
       $('#' + bidCardId).css('display', 'none');
       $('.roundNum').text('Round Number: ' + roundNumber);
@@ -51,7 +54,7 @@ $(document).ready(function () {
       $('#comp-score').text('OPPONENT SCORE: ' + compScore.toString());
       $('.bid-card').css('display', 'none');
       $("#" + cardId).attr('src',cardsArr[cardIndex[index]]);
-      $("#" + cardId).attr('id', cardIndex[index] + 1);
+      $("#" + cardId).attr('id', '0' + (cardIndex[index] + 1));
       $('#' + bidCardId).css('display', 'none');
       index ++;
       $('.roundNum').text('Round Number: ' + roundNumber);
@@ -72,6 +75,8 @@ $(document).ready(function () {
 
     $('#new-game').click(function() {
       location.reload();
+
+
   });
 });
 
